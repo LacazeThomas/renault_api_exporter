@@ -1,0 +1,39 @@
+RenaultServiceAPIRefresh: 600
+RenaultServiceLocation: fr_FR
+RenaultServiceUsername: mail
+RenaultServicePassword: password
+RenaultServiceVIN: vin
+exporter_port: 9158
+log_level: info
+metric_name_prefix: zoe
+metrics:
+- name: chargeStatus
+  description: chargeStatus (-1 off, ...)
+  path: $.data.attributes.chargeStatus
+- name: rangeHvacOff
+  description: Range left
+  path: $.data.attributes.rangeHvacOff
+- name: batteryTemperature
+  description: batteryTemperature
+  path: $.data.attributes.batteryTemperature
+- name: plugStatus
+  description: plugStatus
+  path: $.data.attributes.plugStatus
+- name: lastUpdateTime
+  description: lastUpdateTime
+  path: $.data.attributes.lastUpdateTime
+- name: batteryLevel
+  description: batteryLevel
+  path: $.data.attributes.batteryLevel
+- name: totalMileage
+  description: totalMileage
+  path: $.data.attributes.totalMileage
+- name: timeRequiredToFullSlow
+  description: timeRequiredToFullSlow
+  path: $.data.attributes.timeRequiredToFullSlow
+- name: instantaneousPower
+  description: instantaneousPower
+  path: $.data.attributes.instantaneousPower
+- name: chargePower
+  description: chargePower
+  path: $.data.attributes.chargePower
