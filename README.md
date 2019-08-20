@@ -8,4 +8,4 @@
 docker run -d -p 9158:9158 --name=renault_api_exporter --restart=always -v $(pwd)/config.yml/:/opt/renault_api_exporter/config.yml renault_api_exporter:latest
 ```
 
-#### Prometheus is now running in 'host:9158/metrics
+#### Prometheus is now running in 'host:9158/metrics'
